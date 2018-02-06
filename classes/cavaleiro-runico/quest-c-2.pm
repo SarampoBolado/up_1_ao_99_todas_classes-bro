@@ -38,8 +38,8 @@ automacro virarCavaleiro_Começo_irAoNpc {
     QuestInactive 9012 #
     NpcNotNear /Chefe dos Cavaleiros/ #ou Chivalry Captain
     call {
-		do conf lockMap none
-        do move prt_in 88 101
+    do conf lockMap none
+    do move prt_in 88 101
     }
 }
 
@@ -62,14 +62,14 @@ automacro virarCavaleiro_Começo {
     QuestInactive 9012 #
     NpcNear /Chefe dos Cavaleiros/ #ou Chivalry Captain
     call {
-        do talk $.NpcNearLastBinId
-        do talk resp 0
-        do talk resp 0
-        [
-        log ==============================
-        log Falei com o Chefe dos cavaleiros
-        log ==============================
-        ]
+    do talk $.NpcNearLastBinId
+    do talk resp 0
+    do talk resp 0
+    [
+    log ==============================
+    log Falei com o Chefe dos cavaleiros
+    log ==============================
+    ]
     }
 }
 
@@ -100,15 +100,15 @@ automacro virarCavaleiro_irAoNpc2 {
     QuestInactive 9012 #
     NpcNear /Cavaleiro Dedicado/ #ou Sir Andrew
     call {
-        do move prt_in 75 107
-        do talk $.NpcNearLastBinId
-        do talk resp 0
-        [
-        log ==============================
-        log Falei com o Cavaleiro Dedicado
-        log ==============================
-     	 ]
-		 do move prt_in 71 91
+    do move prt_in 75 107
+    do talk $.NpcNearLastBinId
+    do talk resp 0
+    [
+    log ==============================
+    log Falei com o Cavaleiro Dedicado
+    log ==============================
+    ]
+    do move prt_in 71 91
     }
 }        
 
@@ -131,22 +131,22 @@ automacro virarCavaleiro_irAoNpc3 {
     QuestInactive 9012 #
     NpcNear /Cavaleiro Honroso/ #ou Sir Siracuse
     call {
-        do move prt_in 71 91 
-        do talk $.NpcNearLastBinId
-        do talk resp 0  #esta é a unica resposta certa as outras estao incertas.. porem precisa acertar 8 de 10 pra passar!!!
-        do talk resp 3  #flamberge
-        do talk resp 2  # provoke lvl 10
-        do talk resp 2  #spear boomerang
-        do talk resp 0  #zefiro
-        do talk resp 1  #80%
-        do talk resp 0  #indica uma bora area de up
-        do talk resp 0  #proteger todo mundo
-        do talk resp 0  #honra
-        [
-        log ==============================
-        log Falei com o Cavaleiro Honroso
-        log ==============================
-        ]
+    do move prt_in 71 91 
+    do talk $.NpcNearLastBinId
+    do talk resp 0  #esta é a unica resposta certa as outras estao incertas.. porem precisa acertar 8 de 10 pra passar!!!
+    do talk resp 3  #flamberge
+    do talk resp 2  # provoke lvl 10
+    do talk resp 2  #spear boomerang
+    do talk resp 0  #zefiro
+    do talk resp 1  #80%
+    do talk resp 0  #indica uma bora area de up
+    do talk resp 0  #proteger todo mundo
+    do talk resp 0  #honra
+    [
+    log ==============================
+    log Falei com o Cavaleiro Honroso
+    log ==============================
+    ]
     }
 }        
 
@@ -169,14 +169,14 @@ automacro virarCavaleiro_irAoNpc4 {
     QuestInactive 9012 #
     NpcNear /Cavaleiro das Lutas/ #ou Sir Windsor
     call {
-        do move prt_in 79 94
-        do talk $.NpcNearLastBinId
-        do talk resp 0  
-        [
-        log ==============================
-        log Falei com o Cavaleiro das Lutas
-        log ==============================
-        ]
+    do move prt_in 79 94
+    do talk $.NpcNearLastBinId
+    do talk resp 0  
+    [
+    log ==============================
+    log Falei com o Cavaleiro das Lutas
+    log ==============================
+    ]
     }
 }        
 automacro virarCavaleiro_irAoNpc4_parte_2_morri { 
@@ -200,7 +200,7 @@ automacro virarCavaleiro_irAoNpc4_parte_2_morri {
     QuestInactive 9012 #
 	NpcNotNear /Cavaleiro das Lutas/ #ou Sir Windsor
     call {
-		do move prt_in 71 91 #CHECAR
+    do move prt_in 71 91 #CHECAR
     }
 }
 automacro virarCavaleiro_irAoNpc4_parte_2_morri_cheguei {
@@ -208,9 +208,9 @@ automacro virarCavaleiro_irAoNpc4_parte_2_morri_cheguei {
     exclusive 1
     QuestActive 9006 #
     call {
-        do talk $.NpcNearLastBinId
-        do talk resp 0 
-		lock virarCavaleiro_irAoNpc4_parte_2_morri_cheguei
+    do talk $.NpcNearLastBinId
+    do talk resp 0 
+    lock virarCavaleiro_irAoNpc4_parte_2_morri_cheguei
     }
 }
 automacro virarCavaleiro_irAoNpc4_parte_2 { 
@@ -259,25 +259,25 @@ automacro virarCavaleiro_irAoNpcmulher {
     QuestInactive 9012 #
     NpcNear /Cavaleira Educada/ #ou Amy Beatrice
     call {
-        do move prt_in 69 107 #CHECAR
-        do talk $.NpcNearLastBinId
-        do talk resp 0  #apos falar com ela a quest 9008 é ativada
-        do talk resp 2 #abre uma sala e espera 2
-        do talk resp 2 # vou na frente
-        do talk resp 1 #impeço mosntros de chegarem na party 1
-        do talk resp 0 #pede pro sacer ajudar
-        do talk resp 2 #decide com o grupo
-        do talk resp 1 #abre um chat e espera
-        do talk resp 2 # a sugestoes de onde caçar
-        do talk resp 0 # leva a pessoa a saida 0
-        do talk resp 0 # pede gentilmente a cura
-        do talk resp 1 #pergunta se é de alguem 
+    do move prt_in 69 107 #CHECAR
+    do talk $.NpcNearLastBinId
+    do talk resp 0  #apos falar com ela a quest 9008 é ativada
+    do talk resp 2 #abre uma sala e espera 2
+    do talk resp 2 # vou na frente
+    do talk resp 1 #impeço mosntros de chegarem na party 1
+    do talk resp 0 #pede pro sacer ajudar
+    do talk resp 2 #decide com o grupo
+    do talk resp 1 #abre um chat e espera
+    do talk resp 2 # a sugestoes de onde caçar
+    do talk resp 0 # leva a pessoa a saida 0
+    do talk resp 0 # pede gentilmente a cura
+    do talk resp 1 #pergunta se é de alguem 
 
-        [
-        log ==============================
-        log Falei com a Cavaleira Educada , teste completo 
-        log ==============================
-        ]
+    [
+    log ==============================
+    log Falei com a Cavaleira Educada , teste completo 
+    log ==============================
+    ]
 
     }
 }        
@@ -301,18 +301,18 @@ automacro virarCavaleiro_irAoNpcCalmo {
     QuestInactive 9012 #
     NpcNear /Cavaleiro Devotado/ #ou Sir Edmond
     call {
-        do move prt_in 70 99 #CHECAR
-        do talk $.NpcNearLastBinId
-        do talk resp 0 
-        do conf attackAuto 0
-		do conf lockMap none
-		do conf route_randomWalk 0
-		pause 350
-        [
-        log ==============================
-        log Falei com o Cavaleiro Devotado , teste completo 
-        log ==============================
-        ]
+    do move prt_in 70 99 #CHECAR
+    do talk $.NpcNearLastBinId
+    do talk resp 0 
+    do conf attackAuto 0
+    do conf lockMap none
+    do conf route_randomWalk 0
+    pause 350
+    [
+    log ==============================
+    log Falei com o Cavaleiro Devotado , teste completo 
+    log ==============================
+    ]
     }
 }        
 automacro virarCavaleiro_matei_monstro {
@@ -335,7 +335,7 @@ automacro virarCavaleiro_matei_monstro {
     QuestInactive 9012 #
     NpcNotNear /Cavaleiro Devotado/ #ou Sir Edmond
     call {
-        do move prt_in 70 99
+    do move prt_in 70 99
     }
 }        
 automacro virarCavaleiro_matei_monstro_voltei {
@@ -343,12 +343,12 @@ automacro virarCavaleiro_matei_monstro_voltei {
     exclusive 1
     QuestActive 9010 #
     call {
-        do talk $.NpcNearLastBinId
-        do talk resp 0 
-		do conf attackAuto 0
-		do conf lockMap none
-		do conf route_randomWalk 0
-		lock virarCavaleiro_matei_monstro_voltei
+    do talk $.NpcNearLastBinId
+    do talk resp 0 
+    do conf attackAuto 0
+    do conf lockMap none
+    do conf route_randomWalk 0
+    lock virarCavaleiro_matei_monstro_voltei
     }
 }
 
@@ -371,19 +371,19 @@ automacro virarCavaleiro_irAoNpcpenultimo {
     QuestInactive 9012 #
     NpcNear /Cavaleiro Modesto/ #ou Sir Gray
     call {
-        do move prt_in 87 92
-        do talk $.NpcNearLastBinId
-        do talk resp 0 
-        do talk resp 2 
-        do talk resp 1
-        do talk resp 1
-        do talk resp 0 
+    do move prt_in 87 92
+    do talk $.NpcNearLastBinId
+    do talk resp 0 
+    do talk resp 2 
+    do talk resp 1
+    do talk resp 1
+    do talk resp 0 
 
-        [
-        log ==============================
-        log Falei com o Cavaleiro Modesto , teste completo 
-        log ==============================
-        ]
+    [
+    log ==============================
+    log Falei com o Cavaleiro Modesto , teste completo 
+    log ==============================
+    ]
     }
 }        
 
@@ -407,14 +407,14 @@ automacro virarCavaleiro_FIM {
     QuestActive   9012 #
     NpcNear /Chefe dos Cavaleiros/ #ou Chivalry Captain
     call {
-        do move prt_in 88 101 #CHECAR
-        do talk $.NpcNearLastBinId
-        [
-        log ==============================
-        log Se tudo deu certo!
-        log AGORA EU LUTO PELA JUSTIÇA E BONS COSTUMES!
-        log ==============================
-        ]
+    do move prt_in 88 101 #CHECAR
+    do talk $.NpcNearLastBinId
+    [
+    log ==============================
+    log Se tudo deu certo!
+    log AGORA EU LUTO PELA JUSTIÇA E BONS COSTUMES!
+    log ==============================
+    ]
     }
 }
 
